@@ -1,0 +1,93 @@
+:root{
+    --primary-color: #0D28A6;
+    --secondary-color: #5CB85F;
+    --primary-font: helvetica;
+}
+body{
+    font-family: var(--primary-font);
+}
+
+/*********** Header **************/
+#header {
+    overflow: hidden;
+    padding-top: 36px;
+    background-color: #F1F3FF;
+    .header-logo{
+        width: 100px;
+        height: auto;
+    }
+    .nav-bar{
+        li {
+           margin-right: 15px;
+           margin-left: 20px; 
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                &:hover{
+                    color: grey;
+                }
+                &.register{
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    #hero-banner{
+        margin-top: 40px;
+        .hero-title{
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 150%;
+            margin-bottom: 20px;
+            @media screen and (min-width: 960px) {
+                font-size: 36px;
+            }
+        }
+        .hero-para{
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 20px;
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+        }
+        .sewa{
+            font-weight: bold;
+            font-size: 12px;
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+        }
+        .hero-image{
+            margin-top: 15px;
+            width: 90%;
+            transform: translateX(7%);
+            @media screen and (min-width: 720px) {
+                transform: translateX(10%);
+            }
+            @media screen and (min-width: 960px) {
+                transform: translateX(-10px);
+                width: 680px;
+            }
+        }
+    }
+}
+
+
+/*********** Footer *********/
+#footer{
+    margin-top: 230px;
+    margin-bottom: 65px;
+    .info-desc{
+        font-size: 14px;
+    }
+    .info-contact{
+        font-size: 14px;
+        margin-top: 30px;
+        @media screen and (min-width: 960px) {
+            margin-top: 0px;
+        }
+    }
+}

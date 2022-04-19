@@ -1,0 +1,20 @@
+/*********** Footer *********/
+.footer {
+    margin-top: 230px;
+    margin-bottom: 65px;
+  }
+  
+  .footer .info-desc {
+    font-size: 14px;
+  }
+  
+  .footer .info-contact {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  
+  @media screen and (min-width: 960px) {
+    .footer .info-contact {
+      margin-top: 0px;
+    }
+  }
