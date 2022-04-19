@@ -1,0 +1,318 @@
+:root{
+    --primary-color: #0D28A6;
+    --secondary-color: #5CB85F;
+    --primary-font: helvetica;
+}
+body{
+    font-family: var(--primary-font);
+}
+
+/*********** Header **************/
+#header {
+    overflow: hidden;
+    padding-top: 36px;
+    background-color: #F1F3FF;
+    .header-logo{
+        width: 100px;
+        height: auto;
+    }
+    .nav-bar{
+        li {
+           margin-right: 15px;
+           margin-left: 20px; 
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                &:hover{
+                    color: grey;
+                }
+                &.register{
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    #hero-banner{
+        margin-top: 40px;
+        .hero-title{
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 150%;
+            margin-bottom: 20px;
+            @media screen and (min-width: 960px) {
+                font-size: 36px;
+            }
+        }
+        .hero-para{
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 20px;
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+        }
+        .sewa{
+            font-weight: bold;
+            font-size: 12px;
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+        }
+        .hero-image{
+            margin-top: 15px;
+            width: 90%;
+            transform: translateX(7%);
+            @media screen and (min-width: 720px) {
+                transform: translateX(10%);
+            }
+            @media screen and (min-width: 960px) {
+                transform: translateX(-10px);
+                width: 680px;
+            }
+        }
+    }
+}
+
+/*********** Main_Services Section **************/
+#services{
+    margin-top: 70px;
+        .service-desc{
+            @media screen and (min-width: 960px) {
+                padding-right: 100px;
+            }
+        }
+        .service-subtitle{
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            line-height: 36px;
+            @media screen and (min-width: 960px) {
+                text-align: left;
+                font-size: 24px;
+            }
+        }
+        .service-para{
+            margin-top: 20px;
+            font-size: 12px;
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+        }
+        .service-img{
+            width: 400px;
+            margin-top: 50px;
+            @media screen and (min-width: 720px) {
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+            @media screen and (min-width: 960px) {
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+        }
+        .list-service{
+            margin-top: 20px;
+            font-family: var(--primary-font);
+            font-size: 12px;
+            text-align: left;
+            list-style-image: url("asset/icon_check.png");
+            @media screen and (min-width: 960px) {
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+}
+
+/*********** Main_Why Us Section **************/
+
+#why-us{
+    margin: 75px 0;
+        .why-desc{
+            text-align: center;
+            @media screen and (min-width: 960px) {
+                text-align: left;
+            }
+            .why-us-title{
+                font-weight: bold;
+                margin-bottom: 15px;
+                font-size: 24px;
+            }
+            .why-us-para{
+                font-size: 14px;
+            }
+            .card{
+                width: 55%;
+                margin: 20px auto;
+                padding-bottom: 15px;
+                @media screen and (min-width: 720px) {
+                    width: 40%;
+                }
+                @media screen and (min-width: 960px) {
+                    width: 23%;
+                    text-align: left;
+                }
+                .img-icon{
+                    margin-bottom: 25px;
+                }
+                .card-subtitle{
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .card-text{
+                    font-size: 14px;
+                }
+            }
+        }
+
+}
+
+/*********** Main_Testimonials *********/
+#testimonial{
+    margin-top: 30px;
+    .test-desc{
+        text-align: center;
+        .test-title{
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .test-para{
+            font-size: 14px;
+        }
+        .card{
+            background-color: #F1F3FF;
+            border:none;
+            width: 80%;
+            margin: 10px;
+            @media screen and (min-width: 768px) {
+                width: 60%;
+                margin: 15px auto;
+            }
+            @media screen and (min-width: 960px) {
+                width: 30%;
+                margin: auto;
+            }
+            .img-photo{
+                display: block;
+                margin: 0 auto;
+            }
+            .rate{
+                margin: 15px 0;
+            }
+            .card-text{
+                font-size: 14px;
+            }
+            .card-name{
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*********** Main_Sewa Banner *********/
+#banner{
+    .card{
+        margin: 100px auto;
+        width: 96%;
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        .sewa-title{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 150%;
+            margin-top: 35px;
+            @media screen and (min-width: 960px) {
+                font-size: 36px;
+            }
+        }
+        .card-text{
+            font-size: 10px;
+            line-height: 20px;
+            margin: 18px 0;
+            @media screen and (min-width: 786px) {
+                font-size: 12px;
+                margin: 23px 0;
+            }
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+                margin: 25px 0;
+            } 
+        }
+        .sewa{
+            margin: 20px 0;
+            font-weight: bold;
+            @media screen and (min-width: 768px) {
+                margin: 20px 0;   
+            }
+            @media screen and (min-width: 960px) {
+                margin: 35px 0;   
+            }
+        }
+    }
+}
+
+/*********** Main_FAQ *********/
+#faq{
+    .faq-desc{
+        text-align: center;
+        @media screen and (min-width: 960px) {
+            text-align: left;
+        }
+        .faq-title{
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 150%;
+            @media screen and (min-width: 768px) {
+                font-size: 20px;
+            }
+            @media screen and (min-width: 960px) {
+                font-size: 24px;
+            }
+        }
+        .faq-para{
+            font-size: 10px;
+            line-height: 20px;
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+            }
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+        }
+    }
+    .faq-item{
+        margin-bottom: 40px;
+        .list-group-item{
+            margin-bottom: 16px;
+            border: 1px solid lightgrey;
+            font-size: 12px;
+            @media screen and (min-width: 960px) {
+                font-size: 14px;
+            }
+            .chev-down{
+                position: absolute;
+                right: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*********** Footer *********/
+#footer{
+    margin-top: 130px;
+    margin-bottom: 65px;
+    .info-desc{
+        font-size: 14px;
+    }
+    .info-contact{
+        font-size: 14px;
+        margin-top: 30px;
+        @media screen and (min-width: 960px) {
+            margin-top: 0px;
+        }
+    }
+}
