@@ -1,0 +1,29 @@
+{
+  "name": "ch3-challange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muh-nashir/ch3-challange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muh-nashir/ch3-challange/issues"
+  },
+  "homepage": "https://github.com/muh-nashir/ch3-challange#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  }
+}

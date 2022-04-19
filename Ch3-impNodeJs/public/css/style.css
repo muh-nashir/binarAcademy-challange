@@ -1,0 +1,170 @@
+:root{
+    --custom-primary: #0D28A6;
+    --custom-secondary: #CFD4ED;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    background-color: #e5e5e5;
+    text-decoration: none;
+}
+
+/* ======= SIGN BANNER ======== */
+
+.banner-img{
+    background-image: url('/assets/banner-sign.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+@media screen and (min-width: 768px) {
+    .banner-img{
+        left: -250px;
+    }
+}
+.contents{
+    width: 482px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+}
+.rect-icon{
+    width: 100px;
+    height: 34px;
+    background-color: var(--custom-secondary);
+}
+.form-sign{
+    z-index: 1;
+    margin-top: 24vh;
+}
+.title{
+    width: 370px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 35px;
+}
+.form-group {
+    margin-bottom: 8px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    height: 38px;
+    padding: 5px 18px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.sign-btn{
+    color: white;
+    background-color: var(--custom-primary);
+    width: 100%;
+    font-weight: 700;
+    transition: .1s ease-in-out;
+}
+.sign-btn:hover{
+    background-color: var(--custom-primary);
+    opacity: 0.8;
+    color: white;
+}
+
+        /* Responsive Sign-Banner */
+@media screen and (min-width: 600px) {
+    label{
+        width: 370px;
+    }
+}
+
+
+/* ====== END OF SIGN BANNER ======== */
+
+/* ====== START OF NAVBAR ======== */
+#navbar{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+}
+.toggle-nav{
+    font-size: 32px;
+    color: black;
+}
+.search-input{
+    outline: none;
+    color: var(--custom-secondary);
+    background: none;
+    border-radius: 0px;
+}
+.search-btn{
+    color: var(--custom-primary);
+    border: 1px solid var(--custom-primary);
+    border-radius: 0px;
+    font-weight: bold;
+}
+.search-btn:hover{
+    background-color: var(--custom-primary);
+}
+.ico-nav{
+    background-color: var(--custom-secondary);
+    padding: 5px 12px;
+    color: black;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.ico-nav:hover{
+    text-decoration: none;
+}
+.ico-name{
+    color:black;
+    font-size: 14px;
+}
+.chev-down{
+    font-size: 32px;
+    color: black;
+}
+/* ====== END OF NAVBAR ======== */
+
+/* ====== START OF DASHBOARD ======== */
+#content-dashboard{
+    padding: 25px 30px;
+    height: 100vh;
+}
+.dash-link{
+    margin-left: -18px;
+}
+.dash-bold{
+    font-weight: bold;
+}
+.dash-name{
+    font-weight: bold;
+}
+.list-order{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 10px;
+    border-left: 4px solid var(--custom-primary);
+}
+.table{
+    background-color: white;
+    margin-left: -18px;
+    font-size: 14px;
+}
+.list-table-order thead{
+    background-color: var(--custom-secondary);
+}
+/* ---------------------- */
+.page-link{
+    color:black;
+}
+/* END OF DASHBOARD */
